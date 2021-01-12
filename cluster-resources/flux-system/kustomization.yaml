@@ -6,9 +6,7 @@ resources:
 patchesStrategicMerge:
 - gotk-components-patch.yaml
 images:
-  - name: manager
+  - name: ghcr.io/fluxcd/kustomize-controller
     newName: acrakslsuoccqde6qa2.azurecr.io/fluxcd/kustomize-controller
-    newTag: v0.5.3
-  - name: manager
+  - name: ghcr.io/fluxcd/source-controller
     newName: acrakslsuoccqde6qa2.azurecr.io/fluxcd/source-controller
-    newTag: v0.5.6
