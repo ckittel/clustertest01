@@ -6,8 +6,6 @@ metadata:
 spec:
   template:
     spec:
-      $setElementOrder/containers:
-      - name: manager
       nodeSelector:
         pci-scope: out-of-scope
       tolerations:
