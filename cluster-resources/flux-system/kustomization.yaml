@@ -3,3 +3,12 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+patchesStrategicMerge:
+- gotk-components-patch.yaml
+images:
+  - name: manager
+    newName: acrakslsuoccqde6qa2.azurecr.io/fluxcd/kustomize-controller
+    newTag: v0.5.3
+  - name: manager
+    newName: acrakslsuoccqde6qa2.azurecr.io/fluxcd/source-controller
+    newTag: v0.5.6
